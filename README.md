@@ -24,7 +24,7 @@
 	
   }'
 
-#把python作为服务启动
+# 把python作为服务启动
 
 vim  /etc/systemd/system/impala.service
 
@@ -59,14 +59,14 @@ ExecStart=/data/test/services.py > /data/test/services.log 2>&1
  sudo chmod 644 /etc/systemd/system/impala.service
  
 
-#3 使配置文件生效
+# 使配置文件生效
 
 sudo systemctl daemon-reload
 
 sudo systemctl enable impala.service
 
 
-设置开机自启动
+# 设置开机自启动
 
 systemctl enable impala.service
 
